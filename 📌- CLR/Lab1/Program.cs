@@ -7,7 +7,7 @@
             Console.WriteLine("\n\t\t\t- Menu -");
             Console.WriteLine("/text - choose amount of words from text file 'Lorem Ipsum'");
             Console.WriteLine("/math - choose basic math operation");
-            Console.WriteLine("/exit - exit");
+            Console.WriteLine("/exit - stop program");
             Console.Write("Select menu item: ");
 
             var choice = Convert.ToString(Console.ReadLine()); // Variable defines item from menu list
@@ -20,6 +20,7 @@
                     MathOperations();
                     break;
                 case "/exit":
+                    Environment.Exit(0);
                     break;
                 default:
                     Console.WriteLine("Oops.. Error! Unknown command, try again.");
