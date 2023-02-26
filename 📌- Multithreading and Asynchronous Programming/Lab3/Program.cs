@@ -93,7 +93,7 @@
     After that, the ReadAsStringAsync method is called to get a string representation of the response. */
     static async Task<string> GetResponseAsync() {
         var client = new HttpClient();
-        var response = await client.GetAsync("//http://webcode.me/");
+        var response = await client.GetAsync("http://webcode.me/");
         return await response.Content.ReadAsStringAsync();
     }
 }
