@@ -59,8 +59,8 @@ public class Program
         Console.WriteLine($"Is enum: {typeInfo.IsEnum}");
         Console.WriteLine($"Is interface: {typeInfo.IsInterface}");
 
-        // Using 'FieldInfo'
-        Console.WriteLine("\t\t\t - FieldInfo -");
+        // Using 'MemberInfo'
+        Console.WriteLine("\t\t\t - MemberInfo -");
         
         MemberInfo[] members = type.GetMembers();
         foreach (var member in members)
